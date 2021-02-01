@@ -8,11 +8,27 @@ https://n0p.me/winbox-bug-dissection/
 
 ## Requirements
 - Python 3+
+- PHP-7.2 cli (If you want use automatic search via shodan api in file winbox_shodan.php) [feature by vendenisko]
 
 This script will NOT run with Python 2.x or lower.
 
 ## How To Use
 The script is simple used with simple arguments in the commandline.
+
+#### Automatic shodan search
+
+You must change API key.
+If you don't have api key
+You must generate it on:
+https://www.shodan.io
+
+If you expect better
+results you can change
+search query.
+
+```
+php winbox_shodan.php
+```
 
 #### WinBox (TCP/IP)
 Exploit the vulnerability and read the password.
